@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TodolistController;
+use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,7 +23,7 @@ Route::get('/todos/{todolist}/edit', [TodolistController::class, 'edit'])->name(
 Route::put('/todos/{todolist}', [TodolistController::class, 'update'])->name('update');
 Route::delete('/{todolist:id}', [TodolistController::class, 'destroy'])->name('destroy');
 Route::resource('todolist', TodolistController::class);
-
+Route::get('/logout', ['LogoutController@logout']);
 
 Auth::routes();
 

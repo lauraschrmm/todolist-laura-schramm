@@ -59,6 +59,10 @@
 
             @endif
         </div>
+        <form class="" action="{{ route('logout')}}" method="post">
+            {{ csrf_field() }}
+            <button type="submit" name="logout">Logout</button>
+        </form>
     </div>
 
 </body>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TodolistController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -27,4 +28,4 @@ Route::get('/logout', ['LogoutController@logout']);
 
 Auth::routes();
 
-//Route::get('/home', ['App\Http\Controllers\HomeController::class', 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');

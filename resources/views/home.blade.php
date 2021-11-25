@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Du bist eingeloggt!') }}
+                    {{ __('Du bist eingeloggt! Wenn du oben links auf "Laravel" klickst, wirst du automatisch zu deiner ToDo-Liste weitergeleitet.') }}
                 </div>
             </div>
         </div>
